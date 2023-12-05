@@ -1,0 +1,12 @@
+<div>
+    <h1>{{title}}</h1>
+    <br>
+    <h4>{{subTitle}}</h4>
+    <br>
+    <button (click)="getCurUser()">Show User</button>
+    <div *ngIf="showUser">
+        <li>{{this.curUser.userId}}</li>
+        <li>{{this.curUser.title}}</li>
+        <li>{{this.curUser.body}}</li>
+    </div>
+</div>
